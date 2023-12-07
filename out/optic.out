@@ -1,0 +1,33 @@
+planners/optic/optic-clp me_ascensores/domain.pddl me_ascensores/problem.pddl
+Number of literals: 28
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+No semaphore facts found, returning
+No analytic limits found, not considering limit effects of goal-only operators
+Initial heuristic = 9.000, admissible cost estimate 0.000
+b (8.000 | 0.002)b (7.000 | 0.005)b (6.000 | 0.006)b (4.000 | 0.007)b (3.000 | 0.008)b (2.000 | 0.009)b (1.000 | 0.010)(G)
+; No metric specified - using makespan
+
+; Plan found with metric 0.011
+; States evaluated so far: 33
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 0.00
+0.000: (go_up e0 f0 f1)  [0.001]
+0.001: (go_up e0 f1 f2)  [0.001]
+0.002: (get_in p0 e0 s2 s1 f2)  [0.001]
+0.003: (go_down e0 f2 f1)  [0.001]
+0.004: (go_down e0 f1 f0)  [0.001]
+0.005: (get_out p0 e0 s0 s1 f0)  [0.001]
+0.005: (get_in p1 e0 s2 s1 f0)  [0.001]
+0.006: (go_up e0 f0 f1)  [0.001]
+0.007: (go_up e0 f1 f2)  [0.001]
+0.008: (get_out p1 e0 s0 s1 f2)  [0.001]
+0.009: (get_in p1 e1 s1 s0 f2)  [0.001]
+0.010: (go_up e1 f2 f3)  [0.001]
+0.011: (get_out p1 e1 s0 s1 f3)  [0.001]
+
+ * All goal deadlines now no later than 0.011
+
+Resorting to best-first search
+Running WA* with W = 5.000, not restarting with goal states
+b (8.000 | 0.002)b (7.000 | 0.005)b (6.000 | 0.006)b (4.000 | 0.007)b (3.000 | 0.008)b (2.000 | 0.009)b (2.000 | 0.005)b (1.000 | 0.006)(G)b (0.000 | 0.006)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)
