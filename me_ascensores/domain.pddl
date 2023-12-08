@@ -1,5 +1,3 @@
-; TODO: specify max seats per elevator ????
-
 (define (domain elevators)
 (:requirements :strips :typing :equality)
 
@@ -14,7 +12,6 @@
     ; passenger
     (passenger_at ?p - passenger ?f - floor); passenger is at floor
     (inside ?p - passenger ?e - elevator); passenger is inside elevator
-    (outside ?p - passenger); passenger is outside elevator
 
     ; elevator
     (elevator_at ?e - elevator ?f - floor); elevator is at floor
@@ -34,7 +31,6 @@
 (:action get_in
     :parameters ( ?p - passenger ?e - elevator ?s - seat ?ns - seat ?f - floor)
     :precondition (and
-        (outside ?p) ; Not inside elevator
         (remaining_seats ?e ?s) ; There is a seat available that can be removed
         (remove_seat ?s ?ns)
         (elevator_at ?e ?f) ; Passenger is at the same floor as the elevator
@@ -42,7 +38,6 @@
         (available_floor ?e ?f)
     )
     :effect (and 
-        (not (outside ?p)) ; Passenger is no longer outside
         (inside ?p ?e) ; Passenger is now inside
         (not (passenger_at ?p ?f)) ; Passenger is no longer at the floor
         (remaining_seats ?e ?ns) ; There is one less seat available
@@ -59,7 +54,6 @@
     )
     :effect (and
         (not (inside ?p ?e)) ; Passenger is no longer inside
-        (outside ?p) ; Passenger is now outside
         (passenger_at ?p ?f) ; Passenger is now at the floor
         (remaining_seats ?e ?ns) ; There is one more seat available
     )

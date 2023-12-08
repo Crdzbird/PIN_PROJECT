@@ -9,9 +9,7 @@
 (:init
     ; passenger 
     (passenger_at P0 F2)
-    (outside P0)
     (passenger_at P1 F0)
-    (outside P1)
 
     ; elevator
     (elevator_at E0 F0)
