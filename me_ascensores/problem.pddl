@@ -23,14 +23,6 @@
     (available_floor E1 F2)
     (available_floor E1 F3)
 
-    ; floor
-    (move_up F0 F1)
-    (move_up F1 F2)
-    (move_up F2 F3)
-    (move_down F1 F0)
-    (move_down F2 F1)
-    (move_down F3 F2)
-
     ; seat
     (add_seat S0 S1)
     (add_seat S1 S2)
