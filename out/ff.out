@@ -14,8 +14,28 @@ checking for cyclic := effects --- OK.
 ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
     metric is  plan length
 
-Cueing down from goal distance:    8 into depth [1]
-                                   7            [1][2]
+Cueing down from goal distance:   28 into depth [1]
+                                  27            [1][2]
+                                  26            [1]
+                                  25            [1]
+                                  24            [1][2]
+                                  23            [1]
+                                  22            [1]
+                                  21            [1]
+                                  20            [1]
+                                  19            [1][2]
+                                  18            [1]
+                                  17            [1]
+                                  16            [1]
+                                  15            [1]
+                                  14            [1][2]
+                                  13            [1]
+                                  12            [1]
+                                  11            [1]
+                                  10            [1]
+                                   9            [1][2]
+                                   8            [1]
+                                   7            [1]
                                    6            [1]
                                    5            [1]
                                    4            [1]
@@ -26,22 +46,46 @@ Cueing down from goal distance:    8 into depth [1]
 
 ff: found legal plan as follows
 
-step    0: GET_IN P1 E0 S2 S1 F0
-        1: GO_TO E0 F0 F2
-        2: GET_OUT P1 E0 S0 S1 F2
-        3: GET_IN P0 E0 S2 S1 F2
-        4: GO_TO E0 F2 F0
-        5: GET_IN P1 E1 S1 S0 F2
-        6: GO_TO E1 F2 F3
-        7: GET_OUT P0 E0 S0 S1 F0
-        8: GET_OUT P1 E1 S0 S1 F3
+step    0: IN P1 E2 S2 S1 F4
+        1: GOTO E2 F4 F8
+        2: IN P3 E2 S2 S1 F8
+        3: OUT P1 E2 S0 S1 F8
+        4: IN P1 E3 S2 S1 F8
+        5: GOTO E0 F0 F2
+        6: IN P0 E0 S2 S1 F2
+        7: GOTO E0 F2 F3
+        8: GOTO E4 F0 F12
+        9: OUT P0 E0 S0 S1 F3
+       10: GOTO E0 F3 F4
+       11: GOTO E3 F8 F11
+       12: GOTO E2 F8 F4
+       13: OUT P3 E2 S0 S1 F4
+       14: IN P3 E0 S2 S1 F4
+       15: OUT P1 E3 S0 S1 F11
+       16: GOTO E3 F11 F12
+       17: GOTO E0 F4 F1
+       18: IN P4 E0 S1 S0 F1
+       19: IN P2 E0 S1 S0 F1
+       20: OUT P3 E0 S0 S1 F1
+       21: GOTO E0 F1 F4
+       22: OUT P2 E0 S0 S1 F4
+       23: OUT P4 E0 S0 S1 F4
+       24: GOTO E4 F12 F4
+       25: IN P4 E4 S3 S2 F4
+       26: IN P2 E4 S3 S2 F4
+       27: GOTO E4 F4 F12
+       28: OUT P4 E4 S0 S1 F12
+       29: IN P4 E3 S2 S1 F12
+       30: GOTO E3 F12 F9
+       31: OUT P2 E4 S0 S1 F12
+       32: OUT P4 E3 S0 S1 F9
      
 
-time spent:    0.00 seconds instantiating 84 easy, 0 hard action templates
-               0.00 seconds reachability analysis, yielding 23 facts and 53 actions
-               0.00 seconds creating final representation with 21 relevant facts, 0 relevant fluents
+time spent:    0.00 seconds instantiating 2301 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 137 facts and 959 actions
+               0.00 seconds creating final representation with 132 relevant facts, 0 relevant fluents
                0.00 seconds computing LNF
                0.00 seconds building connectivity graph
-               0.00 seconds searching, evaluating 11 states, to a max depth of 2
+               0.00 seconds searching, evaluating 86 states, to a max depth of 2
                0.00 seconds total time
 

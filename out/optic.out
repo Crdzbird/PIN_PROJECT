@@ -1,28 +1,71 @@
-Number of literals: 23
-Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
-Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
-No semaphore facts found, returning
-[01;34mNo analytic limits found, not considering limit effects of goal-only operators[00m
-Initial heuristic = 8.000, admissible cost estimate 0.000
-b (7.000 | 0.000)b (6.000 | 0.002)b (5.000 | 0.002)b (4.000 | 0.003)b (3.000 | 0.003)b (2.000 | 0.004)b (1.000 | 0.004)(G)
+Initial heuristic = 6.000, admissible cost estimate 0.000
+b (5.000 | 0.000)b (4.000 | 0.001)b (3.000 | 0.001)b (2.000 | 0.001)b (1.000 | 0.002)(G)
 ; No metric specified - using makespan
 
-; Plan found with metric 0.005
-; States evaluated so far: 17
+; Plan found with metric 0.002
+; States evaluated so far: 10
 ; States pruned based on pre-heuristic cost lower bound: 0
-; Time 0.00
-0.000: (get_in p1 e0 s2 s1 f0)  [0.001]
-0.001: (go_to e0 f0 f2)  [0.001]
-0.002: (get_out p1 e0 s0 s1 f2)  [0.001]
-0.002: (get_in p0 e0 s2 s1 f2)  [0.001]
-0.003: (go_to e0 f2 f0)  [0.001]
-0.003: (get_in p1 e1 s1 s0 f2)  [0.001]
-0.004: (go_to e1 f2 f3)  [0.001]
-0.004: (get_out p0 e0 s0 s1 f0)  [0.001]
-0.005: (get_out p1 e1 s0 s1 f3)  [0.001]
+; Time 0.02
+0.000: (in p0 e1 s2 s1 f0)  [0.001]
+0.000: (in p1 e0 s1 s0 f0)  [0.001]
+0.001: (goto e1 f0 f2)  [0.001]
+0.001: (goto e0 f0 f1)  [0.001]
+0.002: (out p0 e1 s0 s1 f2)  [0.001]
+0.002: (out p1 e0 s0 s1 f1)  [0.001]
 
- * All goal deadlines now no later than 0.005
+ * All goal deadlines now no later than 0.002
 
 Resorting to best-first search
 Running WA* with W = 5.000, not restarting with goal states
-b (7.000 | 0.000)b (6.000 | 0.002)b (5.000 | 0.002)b (4.000 | 0.003)b (3.000 | 0.003)b (2.000 | 0.004)b (1.000 | 0.004)(G)b (0.000 | 0.005)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)
+b (5.000 | 0.000)b (4.000 | 0.001)b (4.000 | 0.000)b (3.000 | 0.001)b (2.000 | 0.001)b (1.000 | 0.002)
+Problem Unsolvable
+;;;; Solution Found
+; States evaluated: 123
+; Cost: 0.002
+; Time 0.04
+0.000: (in p0 e1 s2 s1 f0)  [0.001]
+0.000: (in p1 e0 s1 s0 f0)  [0.001]
+0.001: (goto e1 f0 f2)  [0.001]
+0.001: (goto e0 f0 f1)  [0.001]
+0.002: (out p0 e1 s0 s1 f2)  [0.001]
+0.002: (out p1 e0 s0 s1 f1)  [0.001]
+
+
+
+goto e3 f8 f9)  [0.001]
+0.000: (goto e4 f0 f12)  [0.001]
+0.000: (in p1 e1 s2 s1 f4)  [0.001]
+0.000: (goto e0 f0 f1)  [0.001]
+0.001: (in p4 e0 s2 s1 f1)  [0.001]
+0.001: (in p2 e0 s2 s1 f1)  [0.001]
+0.001: (goto e4 f12 f8)  [0.001]
+0.001: (goto e3 f9 f8)  [0.001]
+0.002: (goto e0 f1 f4)  [0.001]
+0.002: (in p3 e4 s3 s2 f8)  [0.001]
+0.003: (out p4 e0 s0 s1 f4)  [0.001]
+0.003: (out p2 e0 s0 s1 f4)  [0.001]
+0.003: (goto e4 f8 f4)  [0.001]
+0.004: (goto e0 f4 f2)  [0.001]
+0.004: (in p4 e1 s1 s0 f4)  [0.001]
+0.004: (in p2 e4 s2 s1 f4)  [0.001]
+0.005: (in p0 e0 s1 s0 f2)  [0.001]
+0.005: (goto e1 f4 f8)  [0.001]
+0.005: (goto e4 f4 f12)  [0.001]
+0.006: (out p4 e1 s0 s1 f8)  [0.001]
+0.006: (out p1 e1 s0 s1 f8)  [0.001]
+0.006: (goto e0 f2 f3)  [0.001]
+0.006: (out p2 e4 s0 s1 f12)  [0.001]
+0.007: (out p0 e0 s0 s1 f3)  [0.001]
+0.007: (goto e4 f12 f0)  [0.001]
+0.007: (in p4 e3 s2 s1 f8)  [0.001]
+0.007: (in p1 e3 s2 s1 f8)  [0.001]
+0.008: (goto e0 f3 f1)  [0.001]
+0.008: (out p3 e4 s0 s1 f0)  [0.001]
+0.008: (goto e3 f8 f9)  [0.001]
+0.009: (out p4 e3 s0 s1 f9)  [0.001]
+0.009: (goto e0 f1 f0)  [0.001]
+0.010: (goto e3 f9 f11)  [0.001]
+0.010: (in p3 e0 s1 s0 f0)  [0.001]
+0.011: (out p1 e3 s0 s1 f11)  [0.001]
+0.011: (goto e0 f0 f1)  [0.001]
+0.012: (out p3 e0 s0 s1 f1)  [0.001]
